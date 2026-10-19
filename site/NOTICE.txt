@@ -1,0 +1,26 @@
+Counterplay repertoire builder
+
+Application code: GNU GPL version 3, see LICENSE.txt and the corresponding source
+repository accompanying this distribution. Reuses the Counterplay / En Croissant
+repertoire generator and PGN exporter. No engine or desktop runtime is included.
+
+Opening catalogue and continuation data:
+Lichess chess-openings — https://github.com/lichess-org/chess-openings
+CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+Frequency weights count canonical named continuations; they are NOT statistics
+from played games. The generation algorithm is deterministic, not engine analysis.
+
+Opening explanations:
+Adapted from Wikibooks Chess Opening Theory.
+https://en.wikibooks.org/wiki/Chess_Opening_Theory
+CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
+GFDL — https://www.gnu.org/licenses/fdl-1.3.html
+Each explanation includes the specific source URL, revision and attribution.
+Complete contributor histories are linked alongside the text. The bundled
+curated records are data/processed/opening_knowledge.json in the source tree.
+Explanation cards are separate from PGN comments; generated PGNs preserve the
+same move tree and metadata as the desktop generator.
+
+UI: React (MIT), Mantine (MIT), Tabler Icons (MIT), i18next/react-i18next (MIT).
+Chess rules and PGN parsing: chessops (GPL-3.0-or-later).
+Piece artwork: the desktop application's bundled Staunty piece set.
